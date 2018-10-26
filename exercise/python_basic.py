@@ -1,4 +1,6 @@
 # 格式化代码
+import math
+
 print('%2d-%02d' % (3, 1))
 print('%.2f' % 3.1415926)
 
@@ -51,3 +53,25 @@ for x in L:
 # dict 字典
 d = {'money': 100, 'haveTimes': 200, 'noTimes': 100}
 print(dir(list))
+
+# 函数
+'''
+请定义一个函数quadratic(a, b, c)，接收3个参数，返回一元二次方程：
+
+ax2 + bx + c = 0
+
+的两个解。
+'''
+
+
+def quadratic(s, b, c):
+    dt = b * b - 4 * s * c
+    if dt < 0:
+        return '此方程无解'
+    elif dt == 0:
+        return (-b + math.sqrt(dt)) / (2 * s)
+    else:
+        return (-b + math.sqrt(dt)) / (2 * s), (-b - math.sqrt(dt)) / (2 * s)
+
+
+print(quadratic(2, 3, 1))
