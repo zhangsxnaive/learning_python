@@ -118,3 +118,4 @@ venv/include/
 /venv/
 /.idea/
 .DS_Store
+dump.rdb

@@ -75,3 +75,4 @@ def quadratic(s, b, c):
 
 
 print(quadratic(2, 3, 1))
+
